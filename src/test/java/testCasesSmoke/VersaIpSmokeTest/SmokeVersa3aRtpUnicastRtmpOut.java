@@ -1,4 +1,4 @@
-package testCasesSmoke;
+package testCasesSmoke.VersaIpSmokeTest;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -8,18 +8,19 @@ import pagesSmoke.Job_type;
 import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 
-public class SmokeVersaUdpMulticastUdpUnicast extends BaseClassSmokeTest {
+public class SmokeVersa3aRtpUnicastRtmpOut extends BaseClassSmokeTest{
 	
 	@Test
-	public void smokeVersaUdpMulticastUdpUnicast() throws Exception
+	public void smokeVersa3aRtpUnicastRtmpOut() throws Exception
 	{
 		Job_type type = PageFactory.initElements(driver, Job_type.class);
 		type.versa_job();
 		
 		InputVersa input =PageFactory.initElements(driver, InputVersa.class);
-		input.job_name(config.smokeVersaUdpMulticastUdpUnicast());
+		input.job_name("smokeVersa10RtpUnicastRtmpOut");
 	
-		input.udp_in1(config.udp1_input_ip1_multicast(), config.udp_port());
+		input.udp_in1(config.udp1_input_ip2_unicast(), "7000");
+		input.decapt_Rtp(config.depacketizer());
 		input.addInput();
 		input.inp_next();
 		input.process_next();
@@ -29,11 +30,10 @@ public class SmokeVersaUdpMulticastUdpUnicast extends BaseClassSmokeTest {
 		prof.profile_next();
 		Thread.sleep(1000);
 		OutputVersa out= PageFactory.initElements(driver, OutputVersa.class);
-		out.udp_1_profile(output.cluster_name(), output.udp_outUnicast_serverIp(), output.udp_out_profile1_port(), output.rate_control(), output.track_1_out(), output.track_2_out());
+		out.rtmp_1_profile(output.rtmp_cluster_name(), "rtmp_testcase3a", output.rtmp_server_url());
 		out.create_out();
 		
 		out.add_job();
-		
 	}
 
 }
