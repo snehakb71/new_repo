@@ -1,5 +1,6 @@
 package testCasesSmoke;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -8,11 +9,14 @@ import pagesSmoke.Job_type;
 import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 
-public class SmokeRtmpInputrtmpOutputjob extends BaseClassSmokeTest{
+public class SmokeRtmpInputrtmpOutputjob extends BaseClassSmokeTest {
+	
 	
 	@Test
 	public void smokeRtmpInputRTmpOutputjob() throws Exception
 	{
+		
+		
 		Job_type type = PageFactory.initElements(driver, Job_type.class);
 		type.versa_job();
 		

@@ -5,14 +5,7 @@
     <classes>
        
       <class name="VersaSmokeTestCases.smokeVersaUdpMulticastUdpUnicast" />
-    <class name="pixfixTestcases.couple_decoeple.Couple_decople_udp"/>
-      <class name="pixfixTestcases.couple_decoeple.couple_decouple_hls_mp4"/>
-      <class name="pixfixTestcases.couple_decoeple.couple_decouple_hls_udp_rtmp_mp4"/>
-      <class name="pixfixTestcases.couple_decoeple.couple_decouple_rtmp_mp4"/>
-      <class name="pixfixTestcases.couple_decoeple.Couple_decouple_rtmp"/>
-      <class name="pixfixTestcases.couple_decoeple.couple_decouple_udp_rtmp"/>
-      <class name="pixfixTestcases.couple_decoeple.Decouple_couple_mp4"/>
-     
+    
       
       <!--  <class name="pixfixTestcases.Couple_decouple_rtmp"/></class>-->
     </classes>
