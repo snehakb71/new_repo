@@ -19,7 +19,7 @@ public class SmokeRtpUnicastUdpunicastjob extends BaseClassSmokeTest{
 		
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name(config.smokeVersaRtpUnicastUdpunicast());
-		inp.udp_in1(config.udp1_input_ip2_unicast(), config.udp1_input_unicast_port2());
+		inp.udp_in1_unicast(config.udp1_input_ip2_unicast(), config.udp1_input_unicast_port2());
 		
 		
 		inp.addInput();

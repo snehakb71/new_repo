@@ -20,13 +20,13 @@ public class SmokeVersa6AMulticastUdpMp4out extends BaseClassSmokeTest{
 			InputVersa input =PageFactory.initElements(driver, InputVersa.class);
 			input.job_name("smokeVersa6AMulticastUdpMp4out");
 		
-			input.udp_in1(config.udp1_input_ip1_multicast(), config.udp_port());
+			input.udp_in1_multicast(config.udp1_input_ip1_multicast(), config.udp_port(), config.udp_interface());
 			
 			input.addInput();
 			input.inp_next();
 			input.process_next();
 			ProfileVersa prof =PageFactory.initElements(driver, ProfileVersa.class);
-			prof.profile_select(profile.profile_hd_640());
+			prof.profile_select(profile.profile_hd_256());
 			
 			prof.profile_next();
 			Thread.sleep(1000);

@@ -19,7 +19,7 @@ public class SmokeUdpMulticastRtmpoutjob extends BaseClassSmokeTest{
 		InputVersa input =PageFactory.initElements(driver, InputVersa.class);
 		input.job_name(config.smokeVersaUdpMulticastRtmpoutjob());
 	
-		input.udp_in1(config.udp1_input_ip1_multicast(), config.udp_port());
+		input.udp_in1_multicast(config.udp1_input_ip1_multicast(), config.udp_port(), config.udp_interface());
 		input.addInput();
 		input.inp_next();
 		input.process_next();

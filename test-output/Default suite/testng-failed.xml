@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesSmoke.SmokeUdpunicastRTMPjob">
+      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeRtmpInputrtmpOutputjob">
         <methods>
+          <include name="smokeRtmpInputRTmpOutputjob"/>
           <include name="start"/>
-          <include name="screen"/>
-          <include name="teardown"/>
-          <include name="smokeUdpunicastRTMPjob"/>
         </methods>
-      </class> <!-- testCasesSmoke.SmokeUdpunicastRTMPjob -->
+      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeRtmpInputrtmpOutputjob -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

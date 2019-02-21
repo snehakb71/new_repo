@@ -19,7 +19,7 @@ public class SmokeVersa3aRtpUnicastRtmpOut extends BaseClassSmokeTest{
 		InputVersa input =PageFactory.initElements(driver, InputVersa.class);
 		input.job_name("smokeVersa10RtpUnicastRtmpOut");
 	
-		input.udp_in1(config.udp1_input_ip2_unicast(), "7000");
+		input.udp_in1_unicast(config.udp1_input_ip2_unicast(), "7000");
 		input.decapt_Rtp(config.depacketizer());
 		input.addInput();
 		input.inp_next();

@@ -19,7 +19,7 @@ public class SmokeVersa3dRtpunicastMp4out extends BaseClassSmokeTest{
 		InputVersa input =PageFactory.initElements(driver, InputVersa.class);
 		input.job_name("smokeVersa3dRtpunicastMp4out");
 	
-		input.udp_in1(config.udp1_input_ip2_unicast(), "7100");
+		input.udp_in1_unicast(config.udp1_input_ip2_unicast(), "7100");
 		input.decapt_Rtp(config.depacketizer());
 		input.addInput();
 		input.inp_next();
