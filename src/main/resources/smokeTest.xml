@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+       
+      <class name="VersaSmokeTestCases.smokeVersaUdpMulticastUdpUnicast" />
+    <class name="pixfixTestcases.couple_decoeple.Couple_decople_udp"/>
+      <class name="pixfixTestcases.couple_decoeple.couple_decouple_hls_mp4"/>
+      <class name="pixfixTestcases.couple_decoeple.couple_decouple_hls_udp_rtmp_mp4"/>
+      <class name="pixfixTestcases.couple_decoeple.couple_decouple_rtmp_mp4"/>
+      <class name="pixfixTestcases.couple_decoeple.Couple_decouple_rtmp"/>
+      <class name="pixfixTestcases.couple_decoeple.couple_decouple_udp_rtmp"/>
+      <class name="pixfixTestcases.couple_decoeple.Decouple_couple_mp4"/>
+     
+      
+      <!--  <class name="pixfixTestcases.Couple_decouple_rtmp"/></class>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
