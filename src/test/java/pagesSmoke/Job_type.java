@@ -116,6 +116,23 @@ public class Job_type {
 		bulkUpoad.click();
 		Thread.sleep(1000);
 	}
+
+
+	/* ****************** create new xport job ****************************NANDINI */
 	
+	public void xportJob() throws Exception {
+		
+		main_job.click();
+		Thread.sleep(1000);
+		xport.click();
+		Thread.sleep(1000);
+	}
+	
+	public void newJob() throws Exception {
+		
+		versa_new_job.click();
+		Thread.sleep(1000);
+		
+	}
 
 }
