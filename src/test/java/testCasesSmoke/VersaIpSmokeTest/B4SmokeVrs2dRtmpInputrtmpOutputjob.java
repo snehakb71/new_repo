@@ -15,7 +15,7 @@ public class B4SmokeVrs2dRtmpInputrtmpOutputjob extends BaseClassSmokeTest{
 	{
 		Job_type type = PageFactory.initElements(driver, Job_type.class);
 		type.versa_job();
-		
+		//
 		InputVersa input =PageFactory.initElements(driver, InputVersa.class);
 		input.job_name("SmokeVrs2dRtmpInputrtmpOutputjob");
 	
