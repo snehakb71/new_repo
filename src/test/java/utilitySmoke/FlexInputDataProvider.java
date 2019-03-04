@@ -10,12 +10,9 @@ Properties pro;
 	
 	public FlexInputDataProvider() throws Exception
 	{
-		File src = new File("./ConfigurationSmoke/Flex.properties");
-		
-		FileInputStream fis = new FileInputStream(src);
-		
-		pro = new Properties();
-		
+		File src = new File("./ConfigurationSmoke/Flex.properties");		
+		FileInputStream fis = new FileInputStream(src);	
+		pro = new Properties();		
 		pro.load(fis);
 	}
 	
@@ -28,87 +25,60 @@ Properties pro;
 	
 	public String getUrl()
 	{
-		return pro.getProperty("sr201Url");
+		return pro.getProperty("ServerURL");
 	}
 	
-	public String user_name()
+	public String UsernamePixfix()
 	{
-		return pro.getProperty("username");
+		return pro.getProperty("Username");
 	}
 	
-	public String password()
+	public String PasswordPixfix()
 	{
-		return pro.getProperty("password");
+		return pro.getProperty("Password");
 	}
 	
-	public String udp_job_name()
+	public String UdpInputIP()
 	{
-		return pro.getProperty("udp_job_name");
+		return pro.getProperty("UdpInputIPAddress");
 	}
 	
-	public String udp_switcher_jobName()
+	public String RTPIP()
 	{
-		return pro.getProperty("switcher_udp_job");
+		return pro.getProperty("RtpInputIPAddress");
 	}
 	
-	public String rtmp_job_name()
+	public String InputRtmpurl()
 	{
-		return pro.getProperty("rtmp_job_name");
+		return pro.getProperty("RtmpInputURL");
 	}
 	
-	public String rtmp_swither_jobName()
+	public String UdpInputInterface()
 	{
-		return pro.getProperty("rtmp_switcher_job");
+		return pro.getProperty("InputInterface");
 	}
 	
-	public String file_job_name()
+	public String IPLocal()
 	{
-		return pro.getProperty("file_job_name");
+		return pro.getProperty("LoacalIPAddress");
+	}
+		
+	public String OutputRtmpURL()
+	{
+		return pro.getProperty("RtmpOutputURL");
 	}
 	
-	public String file_switcher_jobName()
+	public String UdpInputPort()
 	{
-		return pro.getProperty("file_switcher_job");
+		return pro.getProperty("UdpInputPort");
 	}
 	
-	public String srt_job_name()
+	
+	public String UdpInputIPUnicast()
 	{
-		return pro.getProperty("srt_job_name");
+		return pro.getProperty("UnicastIP");
 	}
 	
-	public String rtsp_job_name()
-	{
-		return pro.getProperty("rtsp_job_name");
-	}
 	
-	public String udp1_input_ip1_multicast()
-	{
-		return pro.getProperty("udp1_ip");
-	}
 	
-	public String udp1_input_ip2_multicast()
-	{
-		return pro.getProperty("udp2_ip");
-	}
-	
-	public String udp1_input_ip2_unicast()
-	{
-		return pro.getProperty("udp_unicast");
-	}
-	
-	public String udp1_input_unicast_port1()
-	{
-		return pro.getProperty("udp_unicastPort1");
-	}
-	
-	public String udp1_input_unicast_port2()
-	{
-		return pro.getProperty("udp_unicastport2");
-	}
-	
-	public String udp1_input_unicast_port3()
-	{
-		return pro.getProperty("udp_unicastport3");
-	}
-
 }
