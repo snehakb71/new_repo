@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesSmoke.running_testcases.FileUpload">
+      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver">
         <methods>
-          <include name="mp4_file"/>
-          <include name="teardown"/>
+          <include name="smokeXport_UDP_SRTserver"/>
+          <include name="tearDown"/>
           <include name="start"/>
         </methods>
-      </class> <!-- testCasesSmoke.running_testcases.FileUpload -->
+      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

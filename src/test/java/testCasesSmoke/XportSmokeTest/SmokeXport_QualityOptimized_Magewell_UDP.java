@@ -16,6 +16,7 @@ public class SmokeXport_QualityOptimized_Magewell_UDP extends BaseClassXportSmok
 		
 		Job_type jobType= PageFactory.initElements(driver, Job_type.class);
 		jobType.xportJob();
+		jobType.newJob();
 		
 		XportJobData job= PageFactory.initElements(driver, XportJobData.class);
 		job.jobData("SmokeXport_QualityOptimized_Magewell_UDP", "xport");
