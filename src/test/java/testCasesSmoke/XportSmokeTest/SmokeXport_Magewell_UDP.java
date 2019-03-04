@@ -19,7 +19,7 @@ public class SmokeXport_Magewell_UDP extends BaseClassXportSmokeTest {
 		jobType.newJob();
 		XportJobData job= PageFactory.initElements(driver, XportJobData.class);
 		job.jobData("SmokeXport_Magewell_UDP", "xport");
-		
+		//
 		XportInput in= PageFactory.initElements(driver, XportInput.class);
 		in.RAWinput(data.magewellVideoDevice(), data.magewellAudioDevice(), data.magewellVideoInterface());
 		
