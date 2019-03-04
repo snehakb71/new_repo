@@ -10,7 +10,7 @@ import pagesSmoke.ProfileVersa;
 
 public class SmkVrs53SrtclientUDpout extends BaseClassSmokeTest {
 
-	@Test(groups = "ip_job")
+	@Test
 
 	public void smkVrs53SrtclientUDpout() throws Exception {
 
