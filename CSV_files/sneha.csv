@@ -1,0 +1,187 @@
+
+"JobName","Job Status","Notification"
+"Statistics For SmokeVer1aUdpMulticastUdpUnicast","Active","2019-03-01 17:26:17
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1bUdpUnicastRtpUnicastjob","Active","2019-03-01 17:26:33
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1cRtpUnicastUdpunicast","Active","2019-03-01 17:26:50
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1dUdpUincastUdpUnicast","Active","2019-03-01 17:27:03
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2aUdpMulticastRtmpoutjob","Active","2019-03-01 17:28:32
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2bRTMPInUdpUbnicastjob","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2cUdpunicastRTMPjob","Active","2019-03-01 17:29:05
+Status:Idle, Error:302
+2019-03-01 17:29:05
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-01 17:29:05
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-01 17:29:05
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-01 17:29:03
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVrs2dRtmpInputrtmpOutputjob","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For SmokeVersa3aUdpMulticastRtpUnicastjob","Active","2019-03-01 17:30:24
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVersa3bRtpUnicastRtmpOut","Active","2019-03-01 17:30:40
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa3CRtmpInRtpUnicast","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa3dRtpunicastMp4out","Active","2019-03-01 17:31:15
+Status:Idle, Error:302
+2019-03-01 17:31:15
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-01 17:31:15
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-01 17:31:15
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-01 17:31:13
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa6CUdpPassthroughUdpunicast","Active","2019-03-01 17:32:59
+Status:Idle, Error:302
+2019-03-01 17:32:59
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-01 17:32:59
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-01 17:32:59
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-01 17:32:57
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa6DUdpPassthroughUdpunicast","Active","2019-03-01 17:33:16
+Status:Idle, Error:302
+2019-03-01 17:33:15
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-01 17:33:15
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-01 17:33:15
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-01 17:33:13
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVer1aUdpMulticastUdpUnicast","Active","2019-03-04 14:08:08
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1bUdpUnicastRtpUnicastjob","Active","2019-03-04 14:08:24
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1cRtpUnicastUdpunicast","Active","2019-03-04 14:08:39
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1dUdpUincastUdpUnicast","Active","2019-03-04 14:08:55
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2aUdpMulticastRtmpoutjob","Active","2019-03-04 14:10:24
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2bRTMPInUdpUbnicastjob","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2cUdpunicastRTMPjob","Active","2019-03-04 14:10:57
+Status:Idle, Error:302
+2019-03-04 14:10:57
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-04 14:10:57
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-04 14:10:57
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-04 14:10:55
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVrs2dRtmpInputrtmpOutputjob","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For SmokeVersa3aUdpMulticastRtpUnicastjob","Active","2019-03-04 14:12:20
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVersa3bRtpUnicastRtmpOut","Active","2019-03-04 14:12:36
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa3CRtmpInRtpUnicast","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa3dRtpunicastMp4out","Active","2019-03-04 14:13:09
+Status:Idle, Error:302
+2019-03-04 14:13:09
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-04 14:13:09
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-04 14:13:09
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-04 14:13:07
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa6CUdpPassthroughUdpunicast","Active","2019-03-04 14:14:56
+Status:Idle, Error:302
+2019-03-04 14:14:56
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-04 14:14:55
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-04 14:14:55
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-04 14:14:53
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa6DUdpPassthroughUdpunicast","Active","2019-03-04 14:15:11
+Status:Idle, Error:302
+2019-03-04 14:15:11
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-04 14:15:11
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-04 14:15:11
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-04 14:15:09
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For smokeVersa7AUdpMulticastMp4out","Active","2019-03-04 14:16:18
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmkVrs53SrtclientUDpout","Active","2019-03-04 14:17:39
+Status:Idle, Error:302
+2019-03-04 14:17:39
+Input stream:srt_1, Status:Stream loss, Error:101
+2019-03-04 14:17:39
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-04 14:17:38
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-04 14:17:36
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVer1aUdpMulticastUdpUnicast","Active","2019-03-04 14:24:55
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1bUdpUnicastRtpUnicastjob","Active","2019-03-04 14:25:11
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1cRtpUnicastUdpunicast","Active","2019-03-04 14:25:26
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs1dUdpUincastUdpUnicast","Active","2019-03-04 14:25:39
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2aUdpMulticastRtmpoutjob","Active","2019-03-04 14:29:10
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2bRTMPInUdpUbnicastjob","Active","No Notification Found."
+"JobName","Job Status","Notification"
+"Statistics For Smokevrs2cUdpunicastRTMPjob","Active","2019-03-04 14:29:43
+Status:Idle, Error:302
+2019-03-04 14:29:43
+Input stream:udp_1, Status:Stream loss, Error:101
+2019-03-04 14:29:42
+Input track:1_Video, Status:Stream loss, Error:401
+2019-03-04 14:29:42
+Input track:1_Audio, Status:Stream loss, Error:401
+2019-03-04 14:29:40
+Job started"
+"JobName","Job Status","Notification"
+"Statistics For SmokeVrs2dRtmpInputrtmpOutputjob","Active","No Notification Found."

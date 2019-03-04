@@ -118,4 +118,23 @@ Properties profile_pro;
 	{
 		return profile_pro.getProperty("profile_P2P_PAL");
 	}
+	
+	public String uncompressed_profile()
+	{
+		return profile_pro.getProperty("uncompressed_profile");
+	}
+	
+	
+	public String codecType_QualiOpt()
+	{
+		return profile_pro.getProperty("codecType_QualiOpt");
+	}
+	public String metaTrack()
+	{
+		return profile_pro.getProperty("metaTrack");
+	}
+	
+	
+	
+	
 }

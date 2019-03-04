@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeRtmpInputrtmpOutputjob">
+      <class name="testCasesSmoke.running_testcases.FileUpload">
         <methods>
-          <include name="smokeRtmpInputRTmpOutputjob"/>
+          <include name="mp4_file"/>
+          <include name="teardown"/>
           <include name="start"/>
         </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeRtmpInputrtmpOutputjob -->
+      </class> <!-- testCasesSmoke.running_testcases.FileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

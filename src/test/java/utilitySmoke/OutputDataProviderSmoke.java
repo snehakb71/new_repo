@@ -48,9 +48,14 @@ Properties output_pro;
 		return output_pro.getProperty("udp_port3");
 	}
 
-	public String rate_control()
+	public String CbrAuto_mode()
 	{
-		return output_pro.getProperty("output_rc_mode");
+		return output_pro.getProperty("RateContrallerCBRAuto");
+	}
+	
+	public String Cbr_mode()
+	{
+		return output_pro.getProperty("RateContrallerCBR");
 	}
 	
 	public String track_1_out()
@@ -63,9 +68,25 @@ Properties output_pro;
 		return output_pro.getProperty("output_track2");
 	}
 	
+	public String metaTrack()
+	{
+		return output_pro.getProperty("MetaTrack");
+	}
+	
 	public String pactizer()
 	{
 		return output_pro.getProperty("output_pacatizer");
+	}
+	
+	public String cueToneMode()
+	{
+		return output_pro.getProperty("cueToneMode");
+	}
+	
+	
+	public String compli_PtsBasePcr()
+	{
+		return output_pro.getProperty("compli_PtsBasePcr");
 	}
 	
 	public String rtmp_cluster_name()
@@ -121,8 +142,73 @@ Properties output_pro;
 		return output_pro.getProperty("FilePath_profile_3");
 	}
 	
+	public String movmuxer()
+	{
+		return output_pro.getProperty("movMuxer");
+	}
 	
-	///////////////////////////////////// streamer
+	public String mkvMuxer()
+	{
+		return output_pro.getProperty("mkvMuxer");
+	}
+	
+	public String flvMuxer()
+	{
+		return output_pro.getProperty("flvMuxer");
+	}
+	
+	public String Tsmuxer()
+	{
+		return output_pro.getProperty("Tsmuxer");
+	}
+	
+	public String UserDefinedSlicing()
+	{
+		return output_pro.getProperty("UserDefined");
+	}
+	
+	
+	
+	
+///////////////////////////////////// ************ Raw output
+	
+	
+	public String rawVideoDevice()
+	{
+		return output_pro.getProperty("rawVideoDevice");
+	}
+	
+	public String rawAudioDevice()
+	{
+		return output_pro.getProperty("rawAudioDevice");
+	}
+	
+	public String ScteLineNum()
+	{
+		return output_pro.getProperty("ScteLineNum");
+	}
+///////////////////////////////////// ************ NDi output
+
+	public String ndivideoSource1()
+	{
+		return output_pro.getProperty("ndivideoSource1");
+	}
+	
+	public String ndiAudioSource1()
+	{
+		return output_pro.getProperty("ndiAudioSource1");
+	}
+	
+	public String ndivideoSource2()
+	{
+		return output_pro.getProperty("ndivideoSource2");
+	}
+	
+	public String ndiAudioSource2()
+	{
+		return output_pro.getProperty("ndiAudioSource2");
+	}
+	///////////////////////////////////// *********** streamer
 	
 	public String streamer_name()
 	{

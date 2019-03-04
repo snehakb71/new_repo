@@ -47,6 +47,35 @@ WebDriver driver;
 	@CacheLookup
     WebElement pro_next;
 	
+	
+	@FindBy(xpath="//a[contains(text(), 'Metadata ')]")
+	WebElement metaTrack;
+	
+	@FindBy(id="show_meta_track")
+	WebElement showMetaTrack;
+	
+	@FindBy(id="meta_track_name")
+	WebElement trackName;
+	
+	@FindBy(id="add_meta_track")
+	WebElement addMetaatrcak;
+	
+	@FindBy(id="profile_update")
+	WebElement profileUpdate;
+	
+	
+	
+	@FindBy(xpath="//div[@onclick='edit_pfmt_profile(1)']")
+	WebElement ProfileEdit;
+	
+	@FindBy(id="show_advanced_parameter_1")
+	WebElement ProfileAdvanceparameterShow;
+	
+	@FindBy(id="video_codec_type_1")
+	WebElement VideoCodecType;
+	
+	
+	
 	// * * * * * * * * * * * single profile locotors * * * * * * * * * * *
 	
 	public void profile_select(String profile1) throws Exception
@@ -55,6 +84,27 @@ WebDriver driver;
 		show_pro.click();
 		new Select(profile).selectByVisibleText(profile1);
 		
+	}
+	
+	
+	public void MetaTrcakScte(String ScteTrcak) throws Exception
+	{
+		metaTrack.click();
+		Thread.sleep(1000);
+		showMetaTrack.click();
+		new Select(trackName).selectByVisibleText(ScteTrcak);
+		addMetaatrcak.click();
+		profileUpdate.click();
+	}
+	
+	public void profile_edit()
+	{
+		ProfileEdit.click();
+	}
+	
+	public void profile_Update()
+	{
+		profileUpdate.click();
 	}
 	
 	public void profile_next()
@@ -85,5 +135,16 @@ WebDriver driver;
 		new Select(video2_tack).selectByVisibleText("2_Video");
 		
 	}
+	
+	public void videoCodec_Type(String CodecType)
+	{
+		ProfileAdvanceparameterShow.click();
+		new Select(VideoCodecType).selectByVisibleText(CodecType);
+	}
+	
+	////////////////////////////////////////metaTrack
+	
+	
+	
 
 }

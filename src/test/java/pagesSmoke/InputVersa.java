@@ -20,7 +20,8 @@ public class InputVersa {
 	@CacheLookup
 	WebElement job_na;
 
-	// ********** **** *** UDP Input ***** ***** ***//
+	// ********** **** *** ****** **** ********* **** ***UDP Input ***** *****
+	// ***//
 
 	@FindBy(id = "versa_src_udp")
 	@CacheLookup
@@ -61,7 +62,7 @@ public class InputVersa {
 	@CacheLookup
 	WebElement track_type;
 
-	/////////////////////////// ***************Passthrogh
+	/////////////////////////// *************** *** ****** **** * Passthrogh
 
 	@FindBy(id = "track_passthrough_1_1")
 	WebElement videopassthrough;
@@ -69,7 +70,7 @@ public class InputVersa {
 	@FindBy(id = "track_passthrough_1_2")
 	WebElement audiopassthrough;
 
-	/////////////////////////////// ************************metatrack
+	/////////////////////////////// ************************ metatrack
 
 	@FindBy(xpath = "//a[@onclick='add_track(1);']")
 	WebElement addTrack;
@@ -85,9 +86,40 @@ public class InputVersa {
 
 	@FindBy(id = "meta_cuetone_src_type_1_3")
 	WebElement cuetoneType;
+	
+	///// ******************** ******************* **********For Ts Scte File 
+	@FindBy(xpath = "//a[@onclick='add_track(2);']")
+	WebElement addTrackTS;
+	
+	@FindBy(id = "track_type_2")
+	WebElement trackType_Ts;
+	
+	@FindBy(id = "meta_type_2")
+	WebElement metaTracktypeTS;
+	
+	@FindBy(id = "meta_cuetone_src_2_3")
+	WebElement cuetoneSourceTs;
+	
+	@FindBy(id = "meta_cuetone_src_type_2_3")
+	WebElement cuetoneTypeTs;
 
-	// *** **** **** **** *** **** **** **** *** **** **** RTMP_input *****
-	// ***** ***
+	////////////////// ****** **** ********* **** ********* Perodic Scte
+
+	@FindBy(id = "raw_meta_cuetone_content_duration_1_3")
+	WebElement pero_conDuration;
+
+	@FindBy(id = "raw_meta_cuetone_ad_duration_1_3")
+	WebElement pero_AdDuration;
+
+	//////////// ****** **** ********* **** ********* Scte line
+	
+
+	@FindBy(id = "scte104_line")
+	WebElement scteLine;
+	
+	
+	// *** **** **** **** *** **** **** **** *** **** **** ****** ****RTMP_input
+	// *****
 
 	@FindBy(id = "versa_src_rtmp")
 	WebElement rtmp_input;
@@ -101,16 +133,33 @@ public class InputVersa {
 	@FindBy(id = "gstaf_src_rtmp_stream_name")
 	WebElement stream_name1;
 
-	/// **** *** *** *** **** **** **** *** **** **** **** SRT Input **********
+	/// **** *** *** *** **** **** **** *** **** **** **** ****** **** SRT Input
+	/// **********
 
 	@FindBy(id = "versa_src_srt")
 	WebElement srt_input;
+	
+	@FindBy(id = "gstaf_src_srt_server")
+	WebElement srt_Clientinput;
+	
+	@FindBy(id = "gstaf_src_srt_host")
+	WebElement srt_input_ip;
+	
 
 	@FindBy(id = "gstaf_src_srt_port")
 	WebElement srt_port;
 
-	/// ********** ************** **************** ****** *** **** **** ****
-	/// RTSP INPUT
+	/// **** *** *** *** **** **** **** *** **** **** **** ****** NDI Input
+	/// **********
+
+	@FindBy(id = "versa_src_ndi")
+	WebElement Ndi_input;
+
+	@FindBy(id = "ndi_src")
+	WebElement ndiSource;
+
+	/// ********** ************** **************** ****** *** ****** **** RTSP
+	/// INPUT
 
 	@FindBy(id = "versa_src_rtsp")
 	WebElement rtsp_input;
@@ -118,7 +167,8 @@ public class InputVersa {
 	@FindBy(id = "gstaf_src_rtsp_url")
 	WebElement rtsp_url;
 
-	// *********** ************** ******************** ** HTTP INPUT
+	// *********** ************** ******************** ******** **** *** HTTP
+	// INPUT
 
 	@FindBy(id = "versa_src_http")
 	WebElement http_input;
@@ -126,19 +176,51 @@ public class InputVersa {
 	@FindBy(id = "gstaf_src_http_url")
 	WebElement http_url;
 
-	// *********** ************** ******************** ** *** Test Pattern
+	// *********** ************** ******************** ** ********* **** Test
+	// Pattern
 
 	@FindBy(id = "versa_src_test_pattern")
 	WebElement test_pattern_input;
 
-	// *********** ************** ******************** ** ****************
-	// file_input
+	// *********** ************** ******************** ** ******** file_input
 
 	@FindBy(id = "versa_src_filestream")
 	WebElement file_input;
 
 	@FindBy(id = "gstaf_src_file_stream_file_location")
 	WebElement file_path;
+
+	
+	@FindBy(id="gstaf_format_demux")
+	WebElement deMux;
+	
+	public void demuxer_se(String demux_ts)
+	{
+		new Select(deMux).selectByVisibleText(demux_ts);
+	}
+	
+	// *********** ************** ******************** ** ****** ***Image Slate
+
+	@FindBy(xpath = "//a[contains(text(), 'Image Slate')]")
+	WebElement imageSlateInput;
+
+	@FindBy(id = "gstaf_src_image_slate_image_location")
+	WebElement imagepath;
+
+	// *********** ************** ******************** ** ****** Raw input
+	// Webelements
+
+	@FindBy(id = "versa_src_raw_multi")
+	WebElement Raw_input;
+
+	@FindBy(id = "gstaf_src_raw_video_device_id")
+	WebElement rawVideoDevice_name;
+
+	@FindBy(id = "gstaf_src_raw_video_bmd_video_interface")
+	WebElement rawVideoInterface;
+
+	@FindBy(id = "gstaf_src_raw_audio_device_id")
+	WebElement rawAudioDevice_name;
 
 	// *********** ************** ******************** ** after Adding the input
 
@@ -157,12 +239,13 @@ public class InputVersa {
 	@CacheLookup
 	WebElement process_next;
 
-	////////////////////////////// *******************job name
+	////////////////////////////// ************************* **** ***job name
 
 	public void job_name(String job_name) {
+		job_na.clear();
 		job_na.sendKeys(job_name);
 	}
-	// *********** ************** ******************** ** for 1 UDP INPUT
+	// *********** ************** ******************** ** ****** for 1 UDP INPUT
 
 	public void udp_in1_multicast(String addr1, String port1, String inter) throws Exception {
 
@@ -175,7 +258,9 @@ public class InputVersa {
 		new Select(udp_inter).selectByVisibleText(inter);
 
 	}
-	
+
+	// ****** **** ********* **** ********* **** ********* For Unicast udp
+
 	public void udp_in1_unicast(String addr1, String port1) throws Exception {
 
 		udp1c.click();
@@ -183,11 +268,9 @@ public class InputVersa {
 		udp_source1.clear();
 		udp_source1.sendKeys(addr1);
 		udp_port1.sendKeys(port1);
-		
 
 	}
 
-	
 	// *********** ************** ******************** ** for MPTS UDP INPUT
 
 	public void two_prog_udp(String addr1, String port1, String inter, String prog_name1, String prog_name2)
@@ -211,7 +294,7 @@ public class InputVersa {
 
 	}
 
-	// *********** ************** ******************** ** For RTMP INPUT
+	// *********** ************** ******************** ** ******For RTMP INPUT
 
 	public void rtmpInput(String rtmp_url, String stream_name) {
 		rtmp_input.click();
@@ -222,15 +305,24 @@ public class InputVersa {
 
 	}
 
-	// *********** ************** ******************** For SRT INPUT
+	// *********** ************** ******************** ****** For SRT INPUT
 
-	public void srtInput(String srtPort) {
+	public void srtInput(String srtclientip, String srtPort) {
 		srt_input.click();
+		srt_Clientinput.click();
+		srt_input_ip.sendKeys(srtclientip);
 		srt_port.sendKeys(srtPort);
 
 	}
 
-	// *********** ************** ******************** ** For RTSP INPUT
+	// *********** ************** ******************** ****** For NDI INPUT
+
+	public void ndiInput(String NdiSource) {
+		Ndi_input.click();
+		new Select(ndiSource).selectByVisibleText(NdiSource);
+	}
+
+	// *********** ************** ******************** ******** For RTSP INPUT
 
 	public void rtspInput(String rtspUrl) {
 		rtsp_input.click();
@@ -239,7 +331,7 @@ public class InputVersa {
 
 	}
 
-	// *********** ************** *************** ****For HTTP INPUT
+	// *********** ************** *************** ********** **For HTTP INPUT
 
 	public void httpInput(String httpURL) {
 		http_input.click();
@@ -248,18 +340,43 @@ public class InputVersa {
 
 	}
 
-	// *********** ************** ******************** ForTest Pattern INPUT
+	// *********** ************** ******************** For Test Pattern INPUT
 
 	public void testPattern() {
 		test_pattern_input.click();
 
 	}
 
-	/////////////////////////// *************************** Passthrough Tracks
+	// *********** ************** ************************** File INPUT
+	public void file_input(String input_file_path) {
+		file_input.click();
+		file_path.sendKeys(input_file_path);
+
+	}
+
+	// *********** ************** ************************ Image slate Input
+	public void ImageSlate(String input_Image_path) {
+		imageSlateInput.click();
+		imagepath.sendKeys(input_Image_path);
+
+	}
+	// *********** ************** ******************** ****** *Raw Input
+
+	public void rawInput(String VideoDevice, String VideoInterFace, String AudioDevice) {
+		Raw_input.click();
+		new Select(rawVideoDevice_name).selectByVisibleText(VideoDevice);
+		new Select(rawVideoInterface).selectByVisibleText(VideoInterFace);
+		new Select(rawAudioDevice_name).selectByVisibleText(AudioDevice);
+	}
+
+	/////////////////////////// *************************** * Passthrough Tracks
 	public void passthrough() {
 		videopassthrough.click();
 		audiopassthrough.click();
 	}
+
+	/////////////////////////// ****************************** Depacatizer
+	/////////////////////////// Tracks
 
 	public void decapt_Rtp(String depac) {
 		new Select(depacatizer).selectByVisibleText(depac);
@@ -273,20 +390,69 @@ public class InputVersa {
 		secondaryInput.click();
 	}
 
+	/////////////////////////// *************************** input next
+
 	public void inp_next() {
 
 		in_next.click();
 
 	}
 
+	////////////////////////// *************************** Process next
 	public void process_next() {
 		process_next.click();
 	}
 
-	public void file_input(String input_file_path) {
-		file_input.click();
-		file_path.sendKeys(input_file_path);
+	/////////////////////////// ************************** Scte track
 
+	public void cuetone(String metatrack, String metatype) {
+		addTrack.click();
+		new Select(trackType).selectByVisibleText(metatrack);
+		new Select(metaTracktype).selectByVisibleText(metatype);
+
+	}
+	
+	public void cuetoneSource(String cueSource) {
+		new Select(cuetoneSource).selectByVisibleText(cueSource);
+	}
+	
+	public void cuetoneSourceAPI(String API) {
+		new Select(cuetoneType).selectByVisibleText(API);
+	}
+	
+	public void cuetoneForTsFile(String metatrack, String metatype) {
+		addTrackTS.click();
+		new Select(trackType_Ts).selectByVisibleText(metatrack);
+		new Select(metaTracktypeTS).selectByVisibleText(metatype);
+
+	}
+
+	public void addTrack() {
+		addTrack.click();
+	}
+
+	
+	
+	
+	public void cuetoneSourceTSFile(String cueSource) {
+		new Select(cuetoneSourceTs).selectByVisibleText(cueSource);
+	}
+
+
+	
+
+	public void cuetoneSourceAPITsFile(String API) {
+		new Select(cuetoneTypeTs).selectByVisibleText(API);
+	}
+	
+	public void periodic(String content_Dur, String Ad_dur) {
+		pero_conDuration.sendKeys(content_Dur);
+		pero_AdDuration.sendKeys(Ad_dur);
+	}
+	
+	public void scteLineNum(String lineNum)
+	{
+		scteLine.sendKeys(lineNum);
 	}
 
 }
