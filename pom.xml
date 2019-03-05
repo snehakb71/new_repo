@@ -8,7 +8,10 @@
 	<properties>
 		<!-- <LF_AUTOMATION_VERSION>1.0.0</LF_AUTOMATION_VERSION> -->
 
-		<suiteXmlFile>src/main/resources/coupleDecouple.xml</suiteXmlFile>
+		<suiteXmlFile>src/main/resources/smokeTest.xml</suiteXmlFile>
+
+
+		<!-- <suiteXmlFile>src/main/resources/particular.xml</suiteXmlFile> -->
 
 	</properties>
 

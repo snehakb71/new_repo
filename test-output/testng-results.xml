@@ -2,24 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25994" started-at="2019-03-04T11:14:53Z" finished-at="2019-03-04T11:15:19Z">
+  <suite name="Default suite" duration-ms="26843" started-at="2019-03-05T04:29:14Z" finished-at="2019-03-05T04:29:41Z">
     <groups>
+      <group name="ip_job">
+        <method signature="SmkVrs52UDPInSrtServer.smkVrs52UDPInSrtServer()[pri:0, instance:testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer@1d16f93d]" name="smkVrs52UDPInSrtServer" class="testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer"/>
+      </group> <!-- ip_job -->
     </groups>
-    <test name="Default test" duration-ms="25994" started-at="2019-03-04T11:14:53Z" finished-at="2019-03-04T11:15:19Z">
-      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver">
-        <test-method status="PASS" signature="start()[pri:0, instance:testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver@7d9d1a19]" name="start" is-config="true" duration-ms="7883" started-at="2019-03-04T16:44:53Z" finished-at="2019-03-04T16:45:01Z">
+    <test name="Default test" duration-ms="26843" started-at="2019-03-05T04:29:14Z" finished-at="2019-03-05T04:29:41Z">
+      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer">
+        <test-method status="PASS" signature="start()[pri:0, instance:testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer@1d16f93d]" name="start" is-config="true" duration-ms="9320" started-at="2019-03-05T09:59:14Z" finished-at="2019-03-05T09:59:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="smokeXport_UDP_SRTserver()[pri:0, instance:testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver@7d9d1a19]" name="smokeXport_UDP_SRTserver" duration-ms="17477" started-at="2019-03-04T16:45:01Z" finished-at="2019-03-04T16:45:19Z">
+        <test-method status="PASS" signature="smkVrs52UDPInSrtServer()[pri:0, instance:testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer@1d16f93d]" name="smkVrs52UDPInSrtServer" duration-ms="17487" started-at="2019-03-05T09:59:23Z" finished-at="2019-03-05T09:59:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- smokeXport_UDP_SRTserver -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver@7d9d1a19]" name="tearDown" is-config="true" duration-ms="616" started-at="2019-03-04T16:45:19Z" finished-at="2019-03-04T16:45:19Z">
+        </test-method> <!-- smkVrs52UDPInSrtServer -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer@1d16f93d]" name="teardown" is-config="true" duration-ms="1" started-at="2019-03-05T09:59:41Z" finished-at="2019-03-05T09:59:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver -->
+        </test-method> <!-- teardown -->
+      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -8,7 +8,7 @@ import pagesSmoke.Job_type;
 import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 
-public class A2Smokevrs1bUdpUnicastRtpUnicastjob extends BaseClassSmokeTest {
+public class Smokevrs1bUdpUnicastRtpUnicastjob extends BaseClassSmokeTest {
 	
 	@Test
 	public void smokevrs1bUdpUnicastRtpUnicastjob() throws Exception

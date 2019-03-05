@@ -8,7 +8,7 @@ import pagesSmoke.Job_type;
 import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 
-public class A4Smokevrs1dUdpUincastUdpUnicastjob extends BaseClassSmokeTest {
+public class Smokevrs1dUdpUincastUdpUnicastjob extends BaseClassSmokeTest {
 
 	@Test(priority=4, groups = {"1"} )
 	public void smokevrs1dUdpUincastUdpUnicastjob() throws Exception

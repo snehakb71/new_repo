@@ -1,4 +1,4 @@
-package testCasesSmoke.VersaIpSmokeTest;
+package testCasesSmoke.running_testcases;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,6 +15,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.opencsv.CSVWriter;
+
+import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
 public class Datadriver extends BaseClassSmokeTest {
 	

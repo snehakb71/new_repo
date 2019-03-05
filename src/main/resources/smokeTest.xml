@@ -2,16 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test name="Test">
-	
-	
-		
-	<packages>
-            <package name="testCasesSmoke.VersaIpSmokeTest"/>
-        </packages>
-        
-		
 
-		
+
+
+		<packages>
+			<package name="testCasesSmoke.VersaIpSmokeTest" />
+
+			<package name="testCasesSmoke.scteSmoketestcases" />
+
+		</packages>
+
+		<classes>
+
+			<class
+				name="testCasesSmoke.XportSmokeTest.SmokeXport_QualityOptimized_UDP_UDP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_TestPattern_UDP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP" />
+
+			
+		</classes>
+
+
+
 
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

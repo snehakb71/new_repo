@@ -187,7 +187,7 @@ public class OutputVersa {
 
 	
 	
-	@FindBy(id = "express_deinterlace_tooltip")
+	@FindBy(id = "gstaf_sink_srt_server_1")
 	WebElement srt_server;
 	
 	@FindBy(id = "gstaf_sink_srt_port_1")
@@ -415,10 +415,14 @@ public class OutputVersa {
 	
 //////////////* * * * * * ** * * * * * ** * * * * * ** * * Srt output
 	
-	public void srt_out(String clust_name, String port, String rc_mode1, String trc1, String trc2) {
+	public void srt_out(String clust_name, String port, String rc_mode1, String trc1, String trc2) throws Exception {
 		srt_out.click();
 		cluster_name.sendKeys(clust_name);
-		srt_server.click();
+		
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(srt_server).click().build().perform();  
+		Thread.sleep(1000);
 		//srt_ip.clear();
 		//srt_ip.sendKeys(add);
 		srt_port.sendKeys(port);

@@ -2,6 +2,7 @@ package pagesSmoke;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -309,7 +310,9 @@ public class InputVersa {
 
 	public void srtInput(String srtclientip, String srtPort) {
 		srt_input.click();
-		srt_Clientinput.click();
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(srt_Clientinput).click().build().perform();
 		srt_input_ip.sendKeys(srtclientip);
 		srt_port.sendKeys(srtPort);
 
