@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs4bUnicastUdpMp4Out extends BaseClassSmokeTest{
+public class SmkVrs4bUnicastUdpMp4Out extends RawInputBase{
 	
 	@Test
 	public void smkVrs4bUnicastUdpMp4Out() throws Exception
@@ -20,7 +20,7 @@ public class SmkVrs4bUnicastUdpMp4Out extends BaseClassSmokeTest{
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("smkVrs4bUnicastUdpMp4Out");
 		
-		inp.udp_in1_unicast(config.udp1_input_ip2_unicast(), "7200");
+		inp.udp_in1_unicast(config.RawServerUDPIPunicast(), "7200");
 		inp.addInput();
 		inp.inp_next();
 		inp.process_next();

@@ -25,6 +25,10 @@ public class InputDataProviderSmoke {
 	public String getUrl() {
 		return pro.getProperty("sr201Url");
 	}
+	
+	public String getRawServerUrl() {
+		return pro.getProperty("RawServerUrl");
+	}
 
 	public String user_name() {
 		return pro.getProperty("username");
@@ -77,6 +81,11 @@ public class InputDataProviderSmoke {
 	public String udp1_input_ip2_unicast() {
 		return pro.getProperty("udp_unicast");
 	}
+	
+	public String RawServerUDPIPunicast() {
+		return pro.getProperty("RawUDp_unicast");
+	}
+	
 
 	public String udp1_input_unicast_port1() {
 		return pro.getProperty("udp_unicastPort1");
@@ -100,6 +109,10 @@ public class InputDataProviderSmoke {
 
 	public String udp_interface() {
 		return pro.getProperty("udp_interface");
+	}
+	
+	public String rawServerUdp_interface() {
+		return pro.getProperty("RawUdp_interface");
 	}
 
 	public String depacketizer() {

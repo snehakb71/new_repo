@@ -20,7 +20,7 @@ public class SmkVrs35ScteCueOuDuraUdpInRawOut extends BaseClassSmokeTest{
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs35ScteCueOuDuraUdpInRawOut");
 
-		inp.udp_in1_multicast(config.udp1_input_ip1_multicast(), config.udp_port(), config.udp_interface());
+		inp.udp_in1_multicast(config.udp1_input_ip1_multicast(), config.udp_port(), config.rawServerUdp_interface());
 		
 		inp.cuetone(config.Metadata(), config.cuetone());
 		inp.cuetoneSource(config.scteApi());

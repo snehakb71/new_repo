@@ -1,4 +1,4 @@
-package testCasesSmoke.VersaIpSmokeTest;
+package testCasesSmoke.TestCasesRunning;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pagesSmoke.Job_type;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class AAAFileUpload extends BaseClassSmokeTest{
+public class FileUpload extends BaseClassSmokeTest{
 	
 	@Test
 	public void mp4_file() throws Exception

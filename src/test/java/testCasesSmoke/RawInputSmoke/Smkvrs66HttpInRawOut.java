@@ -11,7 +11,7 @@ import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
 
 // depends on SmkVrs4aBmdInMultiOut
-public class Smkvrs66HttpInRawOut extends BaseClassSmokeTest{
+public class Smkvrs66HttpInRawOut extends RawInputBase{
 	
 
 	@Test

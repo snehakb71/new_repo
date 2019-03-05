@@ -14,6 +14,7 @@
 
 		<classes>
 
+			<class name="testCasesSmoke.TestCasesRunning.FileUpload" />
 			<class
 				name="testCasesSmoke.XportSmokeTest.SmokeXport_QualityOptimized_UDP_UDP" />
 			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP" />
@@ -22,7 +23,7 @@
 			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP" />
 			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP" />
 
-			
+
 		</classes>
 
 

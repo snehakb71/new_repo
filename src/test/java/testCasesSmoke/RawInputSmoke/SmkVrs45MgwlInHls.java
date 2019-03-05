@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs45MgwlInHls extends BaseClassSmokeTest {
+public class SmkVrs45MgwlInHls extends RawInputBase {
 	
 	@Test
 

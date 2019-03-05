@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs37ScteInbandRawInHlsout extends BaseClassSmokeTest{
+public class SmkVrs37ScteInbandRawInHlsout extends RawInputBase{
 	
 	@Test
 	
@@ -21,7 +21,7 @@ public class SmkVrs37ScteInbandRawInHlsout extends BaseClassSmokeTest{
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs37ScteInbandRawInHlsout");
 		
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawServerUdp_interface());
 		inp.addTrack();
 		inp.cuetoneSource(config.scteInband());
 		inp.addInput();

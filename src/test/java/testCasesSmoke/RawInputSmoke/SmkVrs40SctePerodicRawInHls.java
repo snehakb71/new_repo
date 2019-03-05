@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs40SctePerodicRawInHls extends BaseClassSmokeTest{
+public class SmkVrs40SctePerodicRawInHls extends RawInputBase{
 	
 	@Test
 

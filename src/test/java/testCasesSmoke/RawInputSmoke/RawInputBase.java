@@ -1,22 +1,9 @@
-package testCasesSmoke.VersaIpSmokeTest;
+package testCasesSmoke.RawInputSmoke;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-
-import com.opencsv.CSVWriter;
 
 import pagesSmoke.InputVersa;
 import pagesSmoke.Job_type;
@@ -24,13 +11,12 @@ import pagesSmoke.LoginPage;
 import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import utilitySmoke.BrowserSmoke;
-import utilitySmoke.ExcelDataProviderSmoke;
 import utilitySmoke.InputDataProviderSmoke;
 import utilitySmoke.OutputDataProviderSmoke;
 import utilitySmoke.ProfileDataProviderSmoke;
 
-public class BaseClassSmokeTest {
-
+public class RawInputBase {
+	
 	public WebDriver driver;
 
 	public InputDataProviderSmoke config;
@@ -66,7 +52,7 @@ public class BaseClassSmokeTest {
 		versa = new InputVersa(driver);
 		Thread.sleep(1000);
 
-		driver = BrowserSmoke.browser_type(driver, config.getBrowser(), config.getUrl());
+		driver = BrowserSmoke.browser_type(driver, config.getBrowser(), config.getRawServerUrl());
 
 		LoginPage loginpixfix = PageFactory.initElements(driver, LoginPage.class);
 		loginpixfix.loginpix(config.user_name(), config.password());

@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs4aBmdInMultiOut extends BaseClassSmokeTest{
+public class SmkVrs4aBmdInMultiOut extends RawInputBase{
 	
 	@Test
 	public void smkVrs4aBmdInMultiOut() throws Exception
@@ -31,7 +31,7 @@ public class SmkVrs4aBmdInMultiOut extends BaseClassSmokeTest{
 		pro.profile_next();
 		Thread.sleep(500);
 		OutputVersa out = PageFactory.initElements(driver, OutputVersa.class);
-		out.udp_1_profile(output.cluster_name(), output.udp_outUnicast_serverIp(), "7200", output.Cbr_mode(), output.track_1_out(), output.track_2_out());
+		out.udp_1_profile(output.cluster_name(), output.rawServer_udpUnicast(), "7200", output.Cbr_mode(), output.track_1_out(), output.track_2_out());
 		out.CbrBitarteValue();
 		out.create_out();
 		out.next_output();

@@ -1,4 +1,4 @@
-package testCasesSmoke.running_testcases;
+package testCasesSmoke.TestCasesRunning;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -88,7 +88,7 @@ public class Datadriver extends BaseClassSmokeTest {
 		String notification = driver.findElement(By.id("stat_notification")).getText();
 		
 		
-		File log = new File("C:\\Users\\sr39\\git\\smoketest\\CSV_files\\sneha.csv");
+		File log = new File(".\\CSV_files\\sneha.csv");
 
 				try{
 				    if(!log.exists()){
@@ -139,7 +139,7 @@ public class Datadriver extends BaseClassSmokeTest {
 
 		
 
-		File excel = new File("C:\\testing\\Automation\\DataDriven\\SmokeTestRunningIpVersa.xlsx");
+		File excel = new File(".\\ExcelSheets\\SmokeTestRunning.xlsx");
 
 		FileInputStream fis = new FileInputStream(excel);
 

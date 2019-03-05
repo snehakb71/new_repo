@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs65aMgwlInUDPpTSbasPCR extends BaseClassSmokeTest {
+public class SmkVrs65aMgwlInUDPpTSbasPCR extends RawInputBase {
 	
 	@Test
 
@@ -32,7 +32,7 @@ public class SmkVrs65aMgwlInUDPpTSbasPCR extends BaseClassSmokeTest {
 		Thread.sleep(500);
 		OutputVersa out = PageFactory.initElements(driver, OutputVersa.class);
 		
-		out.udp_1_profile(output.cluster_name(), output.udp_out_ip(), "8280", output.Cbr_mode(), output.track_1_out(), output.track_2_out());
+		out.udp_1_profile(output.cluster_name(), output.rawServer_udpUnicast(), "8280", output.Cbr_mode(), output.track_1_out(), output.track_2_out());
 		out.CbrBitarteValue();
 		out.complience(output.compli_PtsBasePcr());
 		out.create_out();

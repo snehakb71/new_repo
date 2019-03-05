@@ -9,7 +9,7 @@ import pagesSmoke.OutputVersa;
 import pagesSmoke.ProfileVersa;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class SmkVrs51VportUDpuniRawOut extends BaseClassSmokeTest {
+public class SmkVrs51VportUDpuniRawOut extends RawInputBase {
 	
 	@Test
 	public void smkVrs51VportUDpuniRawOut() throws Exception
@@ -20,7 +20,7 @@ public class SmkVrs51VportUDpuniRawOut extends BaseClassSmokeTest {
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs51VportUDpuniRawOut");
 		
-		inp.udp_in1_unicast(config.udp1_input_ip2_unicast(), "8700");
+		inp.udp_in1_unicast(config.RawServerUDPIPunicast(), "8700");
 		inp.addInput();
 		inp.inp_next();
 		inp.process_next();

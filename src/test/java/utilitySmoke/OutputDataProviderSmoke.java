@@ -33,6 +33,11 @@ Properties output_pro;
 		return output_pro.getProperty("udp_unicast_server_ip");
 	}
 	
+	public String rawServer_udpUnicast()
+	{
+		return output_pro.getProperty("rawServer_udpUnicast");
+	}
+	
 	public String udp_out_profile1_port()
 	{
 		return output_pro.getProperty("udp_port1");
