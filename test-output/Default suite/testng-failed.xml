@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer">
+      <class name="testCasesSmoke.RawInputSmoke.SmokeXport4aBMD_UDP">
         <methods>
-          <include name="smkVrs52UDPInSrtServer"/>
-          <include name="teardown"/>
+          <include name="smokeXport4aBMD_UDP"/>
+          <include name="tearDown"/>
           <include name="start"/>
         </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer -->
+      </class> <!-- testCasesSmoke.RawInputSmoke.SmokeXport4aBMD_UDP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
