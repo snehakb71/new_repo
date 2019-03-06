@@ -9,26 +9,29 @@ import pagesSmoke.XportJobData;
 import pagesSmoke.XportOutput;
 import pagesSmoke.XportProfile;
 
-public class SmokeXport_BMD_UDP extends BaseClassXportSmokeTest {
+public class SmokeXport61QualityOptimized_UDP_UDP extends BaseClassXportSmokeTest {
 	
 	@Test
-	public void smokeXport_BMD_UDP() throws Exception {
+	public void smokeXport61qualityOptimized_UDP_UDP() throws Exception {
 		
 		Job_type jobType= PageFactory.initElements(driver, Job_type.class);
 		jobType.xportJob();
 		jobType.newJob();
-		//
+		
 		XportJobData job= PageFactory.initElements(driver, XportJobData.class);
-		job.jobData("SmokeXport_BMD_UDP", "xport");
+		job.jobData("SmkXpt61QualityOptiUDP_UDP", "xport");
 		
 		XportInput in= PageFactory.initElements(driver, XportInput.class);
-		in.RAWinput(data.bmdVideoDevice(), data.bmdAudioDevice(), data.bmdVideoInterface());
+		in.udpInput(data.udpInputIPaddress(), data.udpPort(), data.networkInterfaceStatic());
 		
 		XportProfile pro= PageFactory.initElements(driver, XportProfile.class);
-		pro.addProfile(profile.profile_pal_360());
+		pro.addProfile(profile.profile_pal_544());
+		pro.editProfile();
+		pro.selectCompliance();
+		pro.updateProfile();
 		
 		XportOutput out= PageFactory.initElements(driver, XportOutput.class);
-		out.udpOutput(data.systemIP(), "1032");
+		out.udpOutput(data.systemIP(), "1027");
 		
 		job.saveJob();
 		

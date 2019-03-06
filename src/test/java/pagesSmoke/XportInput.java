@@ -123,7 +123,7 @@ public class XportInput {
 				
 		RAWIn.click();
 		Thread.sleep(500);
-		new Select(rawVedioDevice).selectByValue(videoDevice);;
+		new Select(rawVedioDevice).selectByVisibleText(videoDevice);
 		new Select(rawAudioDevice).selectByVisibleText(audioDevice);
 		new Select(rawVedioInterface).selectByVisibleText(videoInterface);
 	}

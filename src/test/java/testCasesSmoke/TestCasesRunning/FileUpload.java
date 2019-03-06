@@ -22,7 +22,7 @@ public class FileUpload extends BaseClassSmokeTest{
 		content.tsFileUpload();
 		content.bulkUp();
 		
-		Thread.sleep(9000);
+		Thread.sleep(11000);
 		driver.navigate().refresh();
 		content.imageFileUpload();
 		content.bulkUp();

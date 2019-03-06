@@ -14,6 +14,7 @@ import utilitySmoke.BrowserSmoke;
 import utilitySmoke.InputDataProviderSmoke;
 import utilitySmoke.OutputDataProviderSmoke;
 import utilitySmoke.ProfileDataProviderSmoke;
+import utilitySmoke.XportDataProvider;
 
 public class RawInputBase {
 	
@@ -22,6 +23,7 @@ public class RawInputBase {
 	public InputDataProviderSmoke config;
 	public ProfileDataProviderSmoke profile;
 	public OutputDataProviderSmoke output;
+	public XportDataProvider data;
 	// public ExcelDataProviderSmoke data;
 	LoginPage log;
 	Job_type type;
@@ -46,6 +48,7 @@ public class RawInputBase {
 		config = new InputDataProviderSmoke();
 		profile = new ProfileDataProviderSmoke();
 		output = new OutputDataProviderSmoke();
+		data = new XportDataProvider();
 		// data = new ExcelDataProviderSmoke();
 		log = new LoginPage(driver);
 		type = new Job_type(driver);

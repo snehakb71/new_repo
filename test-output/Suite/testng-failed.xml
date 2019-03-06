@@ -3,327 +3,43 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="testCasesSmoke.VersaIpSmokeTest.E2SmokeVersa7BMp4OutMp4Input">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.E2SmokeVersa7BMp4OutMp4Input -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.D1SmokeVersa6AMulticastUdpMp4out">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.D1SmokeVersa6AMulticastUdpMp4out -->
-      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP">
-        <methods>
-          <include name="tearDown"/>
-          <include name="start"/>
-          <include name="smokeXport_UDPmulticast_RTP"/>
-        </methods>
-      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.AAAFileUpload">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.AAAFileUpload -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa18Mp4InputFileOutput">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa18Mp4InputFileOutput -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.Smokevrs1cRtpUnicastUdpunicastjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.Smokevrs1cRtpUnicastUdpunicastjob -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs32MltProSctePerodic">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs32MltProSctePerodic -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.Smokevrs1dUdpUincastUdpUnicastjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.Smokevrs1dUdpUincastUdpUnicastjob -->
-      <class name="testCasesSmoke.scteSmoketestcases.ScteTestCasesRunExcel">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.ScteTestCasesRunExcel -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.D2SmokeVersa6BMp4FileUdpUnicast">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.D2SmokeVersa6BMp4FileUdpUnicast -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.VersaSmoke28Switcherjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.VersaSmoke28Switcherjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa11UdpMulProfStreamerHLs">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa11UdpMulProfStreamerHLs -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.B2Smokevrs2bRTMPInUdpUbnicastjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.B2Smokevrs2bRTMPInUdpUbnicastjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs59QualityOptMultipro">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs59QualityOptMultipro -->
       <class name="testCasesSmoke.XportSmokeTest.SmokeXport_TestPattern_UDP">
         <methods>
-          <include name="tearDown"/>
-          <include name="start"/>
+          <include name="smokeXport_Testpattern_UDP"/>
         </methods>
       </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_TestPattern_UDP -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs33MltProScteInband">
+      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP">
         <methods>
-          <include name="teardown"/>
-          <include name="start"/>
+          <include name="smokeXport_UDPmulticast_UDP"/>
         </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs33MltProScteInband -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.D4SmokeVersa6DUdpunicastUdpOut">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.D4SmokeVersa6DUdpunicastUdpOut -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.B4SmokeVrs2dRtmpInputrtmpOutputjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.B4SmokeVrs2dRtmpInputrtmpOutputjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa13TestInUdpOut">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa13TestInUdpOut -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.TestCase">
-        <methods>
-          <include name="udp_all_flex"/>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.TestCase -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa1aUdpMulticastUdpUnicast">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa1aUdpMulticastUdpUnicast -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs28SctePerodic">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs28SctePerodic -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.C2SmokeVersa3bRtpUnicastRtmpOut">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.C2SmokeVersa3bRtpUnicastRtmpOut -->
+      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP -->
       <class name="testCasesSmoke.XportSmokeTest.SmokeXport_QualityOptimized_UDP_UDP">
         <methods>
           <include name="smokeXport_qualityOptimized_UDP_UDP"/>
-          <include name="tearDown"/>
           <include name="start"/>
         </methods>
       </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_QualityOptimized_UDP_UDP -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.Smokevrs1bUdpUnicastRtpUnicastjob">
+      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP">
+        <methods>
+          <include name="smokeXport_UDPmulticast_RTP"/>
+        </methods>
+      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP -->
+      <class name="testCasesSmoke.TestCasesRunning.FileUpload">
         <methods>
           <include name="teardown"/>
           <include name="start"/>
         </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.Smokevrs1bUdpUnicastRtpUnicastjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa19TsInputMultiFileOut">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa19TsInputMultiFileOut -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer">
-        <methods>
-          <include name="smkVrs52UDPInSrtServer"/>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs52UDPInSrtServer -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa10MulticastRTPmultiOut">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa10MulticastRTPmultiOut -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.B3Smokevrs2cUdpunicastRTMPjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.B3Smokevrs2cUdpunicastRTMPjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs58QualityOpt">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs58QualityOpt -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs53SrtclientUDpout">
-        <methods>
-          <include name="smkVrs53SrtclientUDpout"/>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs53SrtclientUDpout -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.E1SmokeVersa7AUdpMulticastMp4out">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.E1SmokeVersa7AUdpMulticastMp4out -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs27scteOutbandCueoutDuration">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs27scteOutbandCueoutDuration -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.D3SmokeVersa6CUdpPassthroughUdpunicast">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.D3SmokeVersa6CUdpPassthroughUdpunicast -->
-      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP">
-        <methods>
-          <include name="tearDown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.C4SmokeVersa3dRtpunicastMp4out">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.C4SmokeVersa3dRtpunicastMp4out -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs30MltProScteOotbndCueOuIn">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs30MltProScteOotbndCueOuIn -->
+      </class> <!-- testCasesSmoke.TestCasesRunning.FileUpload -->
       <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver">
         <methods>
           <include name="smokeXport_UDP_SRTserver"/>
-          <include name="tearDown"/>
-          <include name="start"/>
         </methods>
       </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa9ImageInUdpOut">
+      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP">
         <methods>
-          <include name="teardown"/>
-          <include name="start"/>
+          <include name="smokeXport_SRTclient_UDP"/>
         </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa9ImageInUdpOut -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs54srtClientRTmpout">
-        <methods>
-          <include name="smkVrs54srtClientRTmpout"/>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs54srtClientRTmpout -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa12FileInWowzaRTmp">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa12FileInWowzaRTmp -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs29InbandScte">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs29InbandScte -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.Smkvrs55UdpInNDIout">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.Smkvrs55UdpInNDIout -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.C1SmokeVersa3aUdpMulticastRtpUnicastjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.C1SmokeVersa3aUdpMulticastRtpUnicastjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.B1Smokevrs2aUdpMulticastRtmpoutjob">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.B1Smokevrs2aUdpMulticastRtmpoutjob -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmokeVersa3bRtmpInRtmpOut">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmokeVersa3bRtmpInRtmpOut -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.Smkvrs56NDIinUDpout">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-          <include name="smkvrs56NDIinUDpout"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.Smkvrs56NDIinUDpout -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.SmkVrs64UdpInPtsbasedPcr">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.SmkVrs64UdpInPtsbasedPcr -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs31MltProScteOotbndCueOuDurat">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs31MltProScteOotbndCueOuDurat -->
-      <class name="testCasesSmoke.scteSmoketestcases.SmkVrs26OutbandCueOutCueIn">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.scteSmoketestcases.SmkVrs26OutbandCueOutCueIn -->
-      <class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP">
-        <methods>
-          <include name="tearDown"/>
-          <include name="smokeXport_UDPmulticast_UDP"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP -->
-      <class name="testCasesSmoke.VersaIpSmokeTest.C3SmokeVersa3CRtmpInRtpUnicast">
-        <methods>
-          <include name="teardown"/>
-          <include name="start"/>
-        </methods>
-      </class> <!-- testCasesSmoke.VersaIpSmokeTest.C3SmokeVersa3CRtmpInRtpUnicast -->
+      </class> <!-- testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,7 +21,7 @@ public class SmkVrs37ScteInbandRawInHlsout extends RawInputBase{
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs37ScteInbandRawInHlsout");
 		
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawServerUdp_interface());
+		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addTrack();
 		inp.cuetoneSource(config.scteInband());
 		inp.addInput();
@@ -37,7 +37,7 @@ public class SmkVrs37ScteInbandRawInHlsout extends RawInputBase{
 		
 		OutputVersa out2 = PageFactory.initElements(driver, OutputVersa.class);
 		out2.streamer_out();
-		out2.streamer_name("rawHls_scte");
+		out2.streamer_name("rawHls_scteInbnd");
 		out2.streamer_protocol(output.hls_streamer_pro());
 		
 		out2.streamer_muxOverhead();

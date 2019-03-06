@@ -39,7 +39,7 @@ public class SmkVrs39ScteOubndCuOuDuraRawInHls extends RawInputBase{
 
 		OutputVersa out2 = PageFactory.initElements(driver, OutputVersa.class);
 		out2.streamer_out();
-		out2.streamer_name("rawHls_cueOutdura");
+		out2.streamer_name("rawHls_cueOtdu");
 		out2.streamer_protocol(output.hls_streamer_pro());
 
 		out2.streamer_muxOverhead();

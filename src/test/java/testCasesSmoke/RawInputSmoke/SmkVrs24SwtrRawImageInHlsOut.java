@@ -21,10 +21,11 @@ public class SmkVrs24SwtrRawImageInHlsOut extends RawInputBase {
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("smkVrs24SwtrRawImageInHlsOut");
 		
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceHdmi(), config.rawAudiodevice());
+		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addInput();
 		inp.secondaryInput();
 		inp.ImageSlate(config.ImageFilePath());
+		inp.addInput();
 		inp.inp_next();
 		inp.process_next();
 		

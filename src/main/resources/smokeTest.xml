@@ -10,18 +10,21 @@
 
 			<package name="testCasesSmoke.scteSmoketestcases" />
 
+			<package name="testCasesSmoke.RawInputSmoke" />
+
+
 		</packages>
 
 		<classes>
 
 			<class name="testCasesSmoke.TestCasesRunning.FileUpload" />
 			<class
-				name="testCasesSmoke.XportSmokeTest.SmokeXport_QualityOptimized_UDP_UDP" />
-			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_SRTclient_UDP" />
-			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_TestPattern_UDP" />
-			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDP_SRTserver" />
-			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmulticast_RTP" />
-			<class name="testCasesSmoke.XportSmokeTest.SmokeXport_UDPmultiCast_UDP" />
+				name="testCasesSmoke.XportSmokeTest.SmokeXport61QualityOptimized_UDP_UDP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport53SRTclient_UDP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport13TestPattern_UDP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport52UDP_SRTserver" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport15UDPmulticast_RTP" />
+			<class name="testCasesSmoke.XportSmokeTest.SmokeXport14UDPmultiCast_UDP" />
 
 
 		</classes>

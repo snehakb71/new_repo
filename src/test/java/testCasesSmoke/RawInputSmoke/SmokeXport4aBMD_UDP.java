@@ -1,4 +1,4 @@
-package testCasesSmoke.XportSmokeTest;
+package testCasesSmoke.RawInputSmoke;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -8,26 +8,28 @@ import pagesSmoke.XportInput;
 import pagesSmoke.XportJobData;
 import pagesSmoke.XportOutput;
 import pagesSmoke.XportProfile;
+import testCasesSmoke.XportSmokeTest.BaseClassXportSmokeTest;
 
-public class SmokeXport_UDPmulticast_RTP extends BaseClassXportSmokeTest {
+public class SmokeXport4aBMD_UDP extends RawInputBase {
 	
 	@Test
-	public void smokeXport_UDPmulticast_RTP() throws Exception {
+	public void smokeXport4aBMD_UDP() throws Exception {
 		
 		Job_type jobType= PageFactory.initElements(driver, Job_type.class);
 		jobType.xportJob();
 		jobType.newJob();
+		//
 		XportJobData job= PageFactory.initElements(driver, XportJobData.class);
-		job.jobData("SmokeXport_UDPmulticast_RTP", "xport");
+		job.jobData("SmokeXport4aBMD_UDP", "xport");
 		
 		XportInput in= PageFactory.initElements(driver, XportInput.class);
-		in.udpInput(data.udpInputIPaddress(), data.udpPort(), data.networkInterfaceStatic());
+		in.RAWinput(data.bmdVideoDevice(), data.bmdAudioDevice(), data.bmdVideoInterface());
 		
 		XportProfile pro= PageFactory.initElements(driver, XportProfile.class);
 		pro.addProfile(profile.profile_pal_360());
 		
 		XportOutput out= PageFactory.initElements(driver, XportOutput.class);
-		out.rtpOutput(data.systemIP(), "1026");
+		out.udpOutput(data.systemIP(), "1032");
 		
 		job.saveJob();
 		

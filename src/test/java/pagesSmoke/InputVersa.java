@@ -313,6 +313,7 @@ public class InputVersa {
 		
 		Actions act = new Actions(driver);
 		act.moveToElement(srt_Clientinput).click().build().perform();
+		srt_input_ip.clear();
 		srt_input_ip.sendKeys(srtclientip);
 		srt_port.sendKeys(srtPort);
 

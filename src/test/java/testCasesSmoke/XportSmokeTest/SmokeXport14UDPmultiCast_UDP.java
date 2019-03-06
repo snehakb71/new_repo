@@ -9,28 +9,29 @@ import pagesSmoke.XportJobData;
 import pagesSmoke.XportOutput;
 import pagesSmoke.XportProfile;
 
-public class SmokeXport_UDP_SRTserver extends BaseClassXportSmokeTest {
+public class SmokeXport14UDPmultiCast_UDP extends BaseClassXportSmokeTest {
 	
 	@Test
-	public void smokeXport_UDP_SRTserver() throws Exception {
+	public void smokeXport14UDPmulticast_UDP() throws Exception{
 		
 		Job_type jobType= PageFactory.initElements(driver, Job_type.class);
 		jobType.xportJob();
 		jobType.newJob();
 		
 		XportJobData job= PageFactory.initElements(driver, XportJobData.class);
-		job.jobData("SmokeXport_UDP_SRTserver", "xport");
+		job.jobData("smokeXport14UDPmulticast_UDP", "xport");
 		
 		XportInput in= PageFactory.initElements(driver, XportInput.class);
 		in.udpInput(data.udpInputIPaddress(), data.udpPort(), data.networkInterfaceStatic());
 		
 		XportProfile pro= PageFactory.initElements(driver, XportProfile.class);
-		pro.addProfile(profile.profile_pal_544());
+		pro.addProfile(profile.profile_hd_424());
 		
 		XportOutput out= PageFactory.initElements(driver, XportOutput.class);
-		out.srtOutput("1028");
+		out.udpOutput(data.systemIP(), "1025");
 		
 		job.saveJob();
+		
 	}
 
 }

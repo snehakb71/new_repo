@@ -9,32 +9,28 @@ import pagesSmoke.XportJobData;
 import pagesSmoke.XportOutput;
 import pagesSmoke.XportProfile;
 
-public class SmokeXport_QualityOptimized_Magewell_UDP extends BaseClassXportSmokeTest {
+public class SmokeXport53SRTclient_UDP extends BaseClassXportSmokeTest {
 	
 	@Test
-	public void smokeXport_QualityOptimized_Magewell_UDP() throws Exception {
+	public void smokeXport53SRTclient_UDP() throws Exception {
 		
 		Job_type jobType= PageFactory.initElements(driver, Job_type.class);
 		jobType.xportJob();
 		jobType.newJob();
-		//
+		
 		XportJobData job= PageFactory.initElements(driver, XportJobData.class);
-		job.jobData("SmokeXport_QualityOptimized_Magewell_UDP", "xport");
+		job.jobData("SmkXpt53SRTclient_UDP", "xport");
 		
 		XportInput in= PageFactory.initElements(driver, XportInput.class);
-		in.RAWinput(data.magewellVideoDevice(), data.magewellAudioDevice(), data.magewellVideoInterface());
+		in.srtInput(data.serverIP(), "1028");
 		
 		XportProfile pro= PageFactory.initElements(driver, XportProfile.class);
-		pro.addProfile(profile.profile_hd_640());
-		pro.editProfile();
-		pro.selectCompliance();
-		pro.updateProfile();
+		pro.addProfile(profile.profile_hd_424());
 		
 		XportOutput out= PageFactory.initElements(driver, XportOutput.class);
-		out.udpOutput(data.systemIP(), "1030");
+		out.udpOutput(data.systemIP(), "1029");
 		
 		job.saveJob();
-		
 	}
 
 }
