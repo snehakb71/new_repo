@@ -16,11 +16,10 @@ import org.testng.annotations.Test;
 
 import com.opencsv.CSVWriter;
 
-import testCasesSmoke.RawInputSmoke.RawInputBase;
 import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class Datadriver extends BaseClassSmokeTest {
-
+public class XportjobRun extends BaseClassSmokeTest{
+	
 	public int rows;
 
 	public int columns;
@@ -48,16 +47,16 @@ public class Datadriver extends BaseClassSmokeTest {
 
 	public void job_versa() throws Exception {
 
-		boolean ver = driver.findElement(By.xpath("//a[contains(text(), 'PIXFIX Versa')]")).isDisplayed();
+		boolean ver = driver.findElement(By.xpath("//a[contains(text(), 'PIXFIX Xport')]")).isDisplayed();
 		if (ver == true) {
-			driver.findElement(By.xpath("//a[contains(text(), 'PIXFIX Versa')]")).click();
+			driver.findElement(By.xpath("//a[contains(text(), 'PIXFIX Xport')]")).click();
 			Thread.sleep(1000);
 		}
 
 		else {
 			driver.findElement(By.xpath("//span[@id='pixflex-menu-arrow']")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//a[contains(text(), 'PIXFIX Versa')]")).click();
+			driver.findElement(By.xpath("//a[contains(text(), 'PIXFIX Xport')]")).click();
 			Thread.sleep(1000);
 		}
 		new Select(driver.findElement(By.id("query_limit"))).selectByVisibleText("200");
@@ -124,7 +123,7 @@ public class Datadriver extends BaseClassSmokeTest {
 
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 
-		XSSFSheet ws = wb.getSheet("Sheet1");
+		XSSFSheet ws = wb.getSheet("Sheet2");
 
 		int rows = ws.getLastRowNum();
 
@@ -177,4 +176,5 @@ public class Datadriver extends BaseClassSmokeTest {
 		return result.toString();
 
 	}
+
 }

@@ -3,11 +3,9 @@
 <suite name="Suite">
   <test name="scteTest">
   
-    <packages>
-            <package name="testCasesSmoke.scteSmoketestcases;"/>
-            
-            
-            
-        </packages>
+    <classes>
+    <class name="testCasesSmoke.TestCasesRunning.Datadriver"/>
+    
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

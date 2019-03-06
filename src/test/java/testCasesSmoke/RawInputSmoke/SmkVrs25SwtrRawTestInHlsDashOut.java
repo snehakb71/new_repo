@@ -19,7 +19,7 @@ public class SmkVrs25SwtrRawTestInHlsDashOut extends RawInputBase {
 		job.versa_job();
 		
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
-		inp.job_name("smkVrs24SwtrRawTestInHlsDashOut");
+		inp.job_name("smkVrs25SwtrRawTestInHlsDashOut");
 		
 		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addInput();

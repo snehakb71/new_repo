@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesSmoke.RawInputSmoke.SmokeXport4aBMD_UDP">
+      <class name="testCasesSmoke.TestCasesRunning.Datadriver">
         <methods>
-          <include name="smokeXport4aBMD_UDP"/>
-          <include name="tearDown"/>
           <include name="start"/>
+          <include name="jobStartAndStatitics" invocation-numbers="3 7 8 9 12 13 19 23 25 29 35 49 51 52 53 54 55 56 57"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- testCasesSmoke.RawInputSmoke.SmokeXport4aBMD_UDP -->
+      </class> <!-- testCasesSmoke.TestCasesRunning.Datadriver -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

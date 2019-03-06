@@ -17,10 +17,9 @@ import org.testng.annotations.Test;
 import com.opencsv.CSVWriter;
 
 import testCasesSmoke.RawInputSmoke.RawInputBase;
-import testCasesSmoke.VersaIpSmokeTest.BaseClassSmokeTest;
 
-public class Datadriver extends BaseClassSmokeTest {
-
+public class RawTestcaseJobRun extends RawInputBase {
+	
 	public int rows;
 
 	public int columns;
@@ -124,7 +123,7 @@ public class Datadriver extends BaseClassSmokeTest {
 
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 
-		XSSFSheet ws = wb.getSheet("Sheet1");
+		XSSFSheet ws = wb.getSheet("Sheet3");
 
 		int rows = ws.getLastRowNum();
 
@@ -177,4 +176,5 @@ public class Datadriver extends BaseClassSmokeTest {
 		return result.toString();
 
 	}
+
 }
