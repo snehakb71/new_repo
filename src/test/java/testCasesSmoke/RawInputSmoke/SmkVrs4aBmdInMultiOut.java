@@ -20,7 +20,7 @@ public class SmkVrs4aBmdInMultiOut extends RawInputBase{
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("smkVrs4aBmdInMultiOut");
 		
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawBmdInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addInput();
 		inp.inp_next();
 		inp.process_next();

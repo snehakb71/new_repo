@@ -216,9 +216,14 @@ public class InputVersa {
 
 	@FindBy(id = "gstaf_src_raw_video_device_id")
 	WebElement rawVideoDevice_name;
-
+	
+	
+	@FindBy(id = "raw_video_mw_video_iface")
+	WebElement magwell_interface;
+	
+	
 	@FindBy(id = "gstaf_src_raw_video_bmd_video_interface")
-	WebElement rawVideoInterface;
+	WebElement BmdInterface;
 
 	@FindBy(id = "gstaf_src_raw_audio_device_id")
 	WebElement rawAudioDevice_name;
@@ -364,12 +369,26 @@ public class InputVersa {
 		imagepath.sendKeys(input_Image_path);
 
 	}
+	
 	// *********** ************** ******************** ****** *Raw Input
 
-	public void rawInput(String VideoDevice, String VideoInterFace, String AudioDevice) {
+	public void rawBmdInput(String VideoDevice, String VideoInterFace, String AudioDevice) throws Exception {
 		Raw_input.click();
+		Thread.sleep(500);
+		
 		new Select(rawVideoDevice_name).selectByVisibleText(VideoDevice);
-		new Select(rawVideoInterface).selectByVisibleText(VideoInterFace);
+		new Select(BmdInterface).selectByVisibleText(VideoInterFace);
+		new Select(rawAudioDevice_name).selectByVisibleText(AudioDevice);
+	}
+	
+	
+	
+	public void rawMagWellInput(String VideoDevice, String VideoInterFace, String AudioDevice) throws Exception {
+		Raw_input.click();
+		Thread.sleep(500);
+		
+		new Select(rawVideoDevice_name).selectByVisibleText(VideoDevice);
+		new Select(magwell_interface).selectByVisibleText(VideoInterFace);
 		new Select(rawAudioDevice_name).selectByVisibleText(AudioDevice);
 	}
 

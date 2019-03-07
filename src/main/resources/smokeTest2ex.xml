@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+	<test name="Test">
+
+		<packages>
+
+			<package name="testCasesSmoke.VersaIpSmokeTest" />
+
+		</packages>
+
+	</test>
+
+
+
+
+	<test name="Test2">
+
+		<packages>
+
+			<package name="testCasesSmoke.scteSmoketestcases" />
+
+		</packages>
+
+	</test>
+
+
+
+
+	<test name="Test3">
+
+		<packages>
+
+			<package name="testCasesSmoke.RawInputSmoke" />
+
+		</packages>
+
+	</test>
+
+	<test name="Test4">
+
+		<packages>
+
+			<package name="testCasesSmoke.XportSmokeTest" />
+
+		</packages>
+
+	</test>
+
+
+
+
+
+	<test name="test5">
+
+		<classes>
+
+			<class name="testCasesSmoke.TestCasesRunning.FileUpload" />
+
+		</classes>
+
+
+
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

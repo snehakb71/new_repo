@@ -20,7 +20,7 @@ public class SmkVrs45MgwlInHls extends RawInputBase {
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs45MgwlInHls");
 
-		inp.rawInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
+		inp.rawMagWellInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
 		
 		inp.addInput();
 		inp.inp_next();

@@ -1,6 +1,8 @@
 package testCasesSmoke.RawInputSmoke;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import pagesSmoke.InputVersa;
@@ -20,8 +22,13 @@ public class SmkVrs24SwtrRawImageInHlsOut extends RawInputBase {
 		
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("smkVrs24SwtrRawImageInHlsOut");
+		Thread.sleep(500);
+		//driver.findElement(By.id("versa_src_raw_multi")).click();
+		//Thread.sleep(500);
+		//new Select(driver.findElement(By.id("gstaf_src_raw_video_device_id"))).selectByVisibleText("Video_device_1");
+		//new Select(driver.findElement(By.id("gstaf_src_raw_audio_device_id"))).selectByVisibleText("Audio_device_1");
 		
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawMagWellInput(config.rawVideoDevice_2(), config.rawVideoInterfaceSdi(), config.rawAudiodevice_2());
 		inp.addInput();
 		inp.secondaryInput();
 		inp.ImageSlate(config.ImageFilePath());
@@ -42,6 +49,7 @@ public class SmkVrs24SwtrRawImageInHlsOut extends RawInputBase {
 		out2.addstreamer();
 		
 		out2.add_job();
+		System.out.println("job add successful"+driver.getClass());
 	}
 
 }

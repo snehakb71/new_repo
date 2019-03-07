@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="3" parallel="classes" >
   <test name="scteTest">
   
-    <classes>
+  <packages>
+  <package name="testCasesSmoke.TestCasesRunning"/>
+  </packages>
+  
+  
+    <!--<classes> 
     <class name="testCasesSmoke.TestCasesRunning.Datadriver"/>
+    <class name="testCasesSmoke.TestCasesRunning.XportjobRun"/>
+    <class name="testCasesSmoke.TestCasesRunning.RawTestcaseJobRun"/>
     
-    </classes>
+    </classes>-->
   </test> <!-- Test -->
 </suite> <!-- Suite -->

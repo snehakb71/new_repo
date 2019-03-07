@@ -78,7 +78,7 @@ public class BaseClassSmokeTest {
 
 	public void teardown() throws Exception {
 
-	 //driver.quit();
+	 driver.quit();
 
 	}
 

@@ -21,7 +21,7 @@ public class SmkVrs25SwtrRawTestInHlsDashOut extends RawInputBase {
 		InputVersa inp= PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("smkVrs25SwtrRawTestInHlsDashOut");
 		
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawMagWellInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addInput();
 		inp.secondaryInput();
 		inp.testPattern();

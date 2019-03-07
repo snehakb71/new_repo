@@ -21,7 +21,7 @@ public class SmkVrs48MgwlInHlsMp4UserDe extends RawInputBase {
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("smkVrs48MgwlInHlsMp4UserDe");
 
-		inp.rawInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
+		inp.rawMagWellInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
 
 		inp.addInput();
 		inp.inp_next();

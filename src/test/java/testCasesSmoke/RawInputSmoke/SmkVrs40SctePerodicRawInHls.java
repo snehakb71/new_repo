@@ -20,7 +20,7 @@ public class SmkVrs40SctePerodicRawInHls extends RawInputBase{
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs40SctePerodicRawInHls");
 
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawMagWellInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addTrack();
 		inp.cuetoneSource(config.perodic());
 		inp.periodic("90", "20");

@@ -20,7 +20,7 @@ public class SmkVrs65aMgwlInUDPpTSbasPCR extends RawInputBase {
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs65aMgwlInUDPpTSbasPCR");
 
-		inp.rawInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
+		inp.rawMagWellInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
 		inp.addInput();
 		inp.inp_next();
 		inp.process_next();

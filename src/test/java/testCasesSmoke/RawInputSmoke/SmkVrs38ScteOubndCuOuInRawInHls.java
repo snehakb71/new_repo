@@ -20,7 +20,7 @@ public class SmkVrs38ScteOubndCuOuInRawInHls extends RawInputBase {
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs38ScteOubndCuOuInRawInHls");
 
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawMagWellInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		inp.addTrack();
 		inp.cuetoneSource(config.scteApi());
 		inp.cuetoneSourceAPI(config.scteApiCueInCueOut());

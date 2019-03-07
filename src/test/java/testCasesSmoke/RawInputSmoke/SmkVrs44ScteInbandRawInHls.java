@@ -20,7 +20,7 @@ public class SmkVrs44ScteInbandRawInHls extends RawInputBase{
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs44ScteInbandRawOutHls");
 
-		inp.rawInput(config.rawVideoDevice_2(), config.rawVideoInterfaceSdi(), config.rawAudiodevice_2());
+		inp.rawMagWellInput(config.rawVideoDevice_2(), config.rawVideoInterfaceSdi(), config.rawAudiodevice_2());
 		inp.addTrack();
 		
 		inp.cuetoneSource(config.scteInband());

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesSmoke.TestCasesRunning.Datadriver">
+      <class name="testCasesSmoke.RawInputSmoke.SmkVrs49MagewlInRtmpOut">
         <methods>
           <include name="start"/>
-          <include name="jobStartAndStatitics" invocation-numbers="3 7 8 9 12 13 19 23 25 29 35 49 51 52 53 54 55 56 57"/>
           <include name="teardown"/>
+          <include name="smkVrs49MagewlInRtmpOut"/>
         </methods>
-      </class> <!-- testCasesSmoke.TestCasesRunning.Datadriver -->
+      </class> <!-- testCasesSmoke.RawInputSmoke.SmkVrs49MagewlInRtmpOut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

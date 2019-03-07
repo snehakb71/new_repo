@@ -20,7 +20,7 @@ public class SmkVrs50VportRawInUDpuni extends RawInputBase{
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs50VportRawInUDpuni");
 
-		inp.rawInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
+		inp.rawMagWellInput(config.rawVideoDevice(), config.rawVideoInterfaceSdi(), config.rawAudiodevice());
 		
 		inp.addInput();
 		inp.inp_next();

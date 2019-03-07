@@ -20,7 +20,7 @@ public class SmkVrs47MgwlInUDPOut extends RawInputBase {
 		InputVersa inp = PageFactory.initElements(driver, InputVersa.class);
 		inp.job_name("SmkVrs47MgwlInUDPOut");
 
-		inp.rawInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
+		inp.rawMagWellInput(config.rawMagewellVideoDevice(), config.rawVideoInterfaceSdi(), config.rawMagewellAudioDevice());
 		
 		inp.addInput();
 		inp.inp_next();
